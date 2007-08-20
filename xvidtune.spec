@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xvidtune
 %{_datadir}/X11/app-defaults/Xvidtune
-%{_mandir}/man1/xvidtune.1x.bz2
+%{_mandir}/man1/xvidtune.*
 
 
