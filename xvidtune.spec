@@ -5,6 +5,7 @@ Summary:	Video mode tuner for X.org
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
+BuildRoot:	%{_tmppath}/%{name}-root
 
 BuildRequires:	libxt-devel >= 1.0.0
 BuildRequires:	libxxf86vm-devel >= 1.0.0
