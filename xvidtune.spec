@@ -1,6 +1,6 @@
 Name:		xvidtune
 Version:	1.0.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Video mode tuner for X.org
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
