@@ -1,11 +1,10 @@
 Name:		xvidtune
-Version:	1.0.2
-Release:	%mkrel 4
+Version:	1.0.3
+Release:	1
 Summary:	Video mode tuner for X.org
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
 BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxxf86vm-devel >= 1.0.0
@@ -24,14 +23,9 @@ Xvidtune is a client interface to the X server video mode extension
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xvidtune
 %{_datadir}/X11/app-defaults/Xvidtune
 %{_mandir}/man1/xvidtune.*
